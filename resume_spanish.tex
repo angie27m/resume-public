@@ -1,0 +1,179 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuración
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Perfil
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerlastnamestyle{Angie Paola} \headerfirstnamestyle{Manrique Ravelo} \\
+	\vspace{2mm}
+	{\hspace{0.8cm}\faEnvelope\ angie27manrique@gmail.com}  |  {\faMobile\ (+57) 3107669063}  |  {\faMapMarker\ Bogotá, Colombia} 
+	\newline {\faLink\ \href{https://www.linkedin.com/in/angie27manrique/}{https://www.linkedin.com/in/angie27manrique/}}
+\end{center}
+\vspace{-2mm}
+
+\cvsection{Habilidades}
+\begin{cventries}
+	\vspace{-2mm}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Lenguajes:  & {\skill{ Java, C\#, TypeScript, SQL, Python.}} \\
+		Frameworks:  & {\skill{ Spring, Angular.}} \\
+		Bases de datos:  & {\skill{ PostgreSQL, MySQL, SQLServer, MongoDB.}} \\
+		Cloud:  & {\skill{ AWS, Azure.}} \\
+		Tecnologías / Herramientas: \hspace{0.05cm} & {\skill{ Docker, Jenkins, GraphQL, Kafka, SonarQube, Maven, npm, Git.}} \\
+		Prácticas:  & {\skill{ Agile, Scrum, SOLID Principles, Test-Driven Development, Code Reviews.}} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+\vspace{-12mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experiencia
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Experiencia}
+\begin{cventries}
+	\cventry
+	{Backend Engineer Semisenior}
+	{Crehana}
+	{Bogotá, Colombia}
+	{Feb. 2021 – Jun. 2024}
+	{\begin{cvitems}
+		\vspace{0.2mm}
+		\item {Desarrollé módulos de software innovadores utilizando Java y Spring Framework, asegurando la integridad de datos y resultando en múltiples funcionalidades recurrentes para más de 1,000,000 de transacciones de clientes.}
+		\item {Programé más de 10 funcionalidades interactivas en Angular, mejorando la funcionalidad de la plataforma; la integración resultó en un aumento del 15\% en el engagement de usuarios y la herramienta es ahora utilizada por más de 200,000 usuarios activos.}
+		\item {Mejoré significativamente el rendimiento del dashboard de reportes mediante la identificación y eliminación de cuellos de botella, logrando una reducción del 50\% en el tiempo de carga.}
+		\item {Diseñé y construí APIs RESTful, mejorando la integración de sistemas y la accesibilidad de datos.}
+		\end{cvitems}}
+
+	\cventry
+	{Web Designer}
+	{Ink digital}
+	{Bogotá, Colombia}
+	{Nov. 2020 – Ene. 2021}
+	{\begin{cvitems}
+		\vspace{0.2mm}
+		\item {Construí diseños innovadores y de alta calidad que constantemente obtuvieron más del 90\% en evaluaciones de rendimiento y accesibilidad.}
+		\item {Desarrollé sitios web para clientes utilizando WordPress CMS, logrando un tiempo promedio de carga de 3 segundos o menos.}
+		\item {Utilicé Google Ads para posicionar sitios web, generando un aumento del 15\% en tráfico orgánico.}
+		\end{cvitems}}
+
+	\cventry
+	{Desarrollador y Co-Investigador}
+	{Universidad de Cundinamarca}
+	{Facatativá, Colombia}
+	{Nov. 2019 – Dic. 2020}
+	{\begin{cvitems}
+		\vspace{0.2mm}
+		\item {Creé e implementé una aplicación web para visualizar los resultados gráficos de análisis descriptivos y predictivos utilizando técnicas de minería de datos.}
+		\item {Realicé un análisis descriptivo y predictivo de datos del ICFES, que resultó en la creación de 10 indicadores clave para medir las brechas de género en la educación colombiana.}
+		\item {Presenté los resultados de la investigación en 3 conferencias nacionales entre 2019 y 2020.}
+		\end{cvitems}}
+\end{cventries}
+
+\vspace{-2mm}
+\cvsection{Proyectos}
+\begin{cventries}
+	\vspace{-1mm}
+	\cventry
+	{}
+	{AquaFeeder: Sistema de Detección de Peces y Optimización de Alimentación en Tiempo Real \vspace{-5mm}}
+	{MATLAB, Arduino, Visión por Computador \vspace{-5mm}}
+	{}
+	{\begin{cvsectionnormaltext}
+		\item{Desarrollé un sistema inteligente utilizando webcam en tiempo real, MATLAB y Arduino para detectar especies de peces y predecir su longitud y porciones de alimento.}
+	\end{cvsectionnormaltext}}
+	
+	\vspace{-4mm}
+	\cventry
+	{}
+	{Brechas de Género en Carreras STEM en las Pruebas Saber 2016 en Colombia \vspace{-5mm}}
+	{Revista Pensamiento Udecino \vspace{-5mm}}
+	{Nov 6, 2020 \vspace{-5mm}}
+	{\begin{cvsectionnormaltext}
+		\item{Publiqué artículo de investigación analizando las disparidades de género en la educación superior colombiana.
+		\newline \faLink\ \href{https://revistas.ucundinamarca.edu.co/index.php/Pensamiento_udecino/article/view/79}{https://revistas.ucundinamarca.edu.co/index.php/Pensamiento\_udecino/article/view/79}}
+	\end{cvsectionnormaltext}}
+	
+	\vspace{-6mm}
+	
+\end{cventries}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Educación
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1mm}
+\cvsection{Educación}
+\begin{cventries}
+	\vspace{-3mm}
+	\cventry
+	{}
+	{Universidad de Cundinamarca \vspace{-5mm}}
+	{Facatativá, Colombia \vspace{-5mm}}
+	{Feb 2016 – Mar 2021 \vspace{-5mm}}
+	{\begin{cvsectionnormaltext} 
+		\item{Pregrado en Ingeniería de Sistemas}
+	\end{cvsectionnormaltext}}
+\end{cventries}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Certificaciones
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-7mm}
+\subsection*{Certificaciones}
+\begin{cventries}
+	\vspace{-1mm}
+	\cventry
+	{}
+	{Oracle Cloud Infrastructure 2023 AI Certified Foundations Associate \vspace{-5mm}}
+	{Oracle \vspace{-5mm}}
+	{2024 \vspace{-5mm}}
+	{}
+\end{cventries}
+
+\end{document}
